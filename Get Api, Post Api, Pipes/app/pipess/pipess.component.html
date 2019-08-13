@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <section class="About">
+        <div class="container">
+       <p>pipess works!</p>
+
+<table border="1">
+    <tr>
+        <th>Emp Code</th>
+        <th>Emp Name</th>
+        <th>Salary</th>
+        <th>Date of Birth</th>
+    </tr>
+
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.code | uppercase}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.salary}}</td>
+        <td>{{employee.dob}}</td>
+    </tr>
+</table>
+
+
+
+ <p>JSON PIPES</p>
+
+ <div>{{jsonPipe|slice:1:3|json}}</div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+  <router-outlet></router-outlet>
+</body>
+</html>
+

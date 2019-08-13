@@ -1,0 +1,4 @@
+.About{ width: 100%; display: flex;}
+.About .container{ width: 50%; margin: auto;}
+
+.btn{ display: inline-block; margin-right: 15px;}
